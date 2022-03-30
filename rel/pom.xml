@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ldbc.snb</groupId>
+    <artifactId>rel</artifactId>
+    <name>Rel client</name>
+    <version>0.3.6-SNAPSHOT</version>
+    <description>Rel implementation for the LDBC SNB driver</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+
+    <repositories>
+        <repository>
+            <id>snb-mvn</id>
+            <url>https://ldbcouncil.org/snb-mvn/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>github</id>
+            <name>The RelationalAI SDK for Apache Maven</name>
+            <url>https://maven.pkg.github.com/RelationalAI/rai-sdk-java</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ldbc.snb</groupId>
+            <artifactId>common</artifactId>
+            <version>0.3.6-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ldbc.driver</groupId>
+            <artifactId>jeeves</artifactId>
+            <version>0.3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.relationalai</groupId>
+            <artifactId>rai-sdk</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.4.1</version>
+                <configuration>
+                    <!-- put your configurations here -->
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

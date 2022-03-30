@@ -80,6 +80,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
+                <module>rel</module>
                 <module>cypher</module>
                 <module>duckdb</module>
                 <module>postgres</module>
