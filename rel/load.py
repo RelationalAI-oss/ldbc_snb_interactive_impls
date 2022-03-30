@@ -22,7 +22,7 @@ def main(argv=None):
     rsp = txn.run(ctx)
     print(json.dumps(rsp, indent=2))
 
-    rsp = api.query(ctx, "snb", "local", "def insert:datadir = \"{}/test-data\"".format(os.getcwd()), readonly=False)
+    rsp = api.query(ctx, "snb", "local", "def insert:datadir = \"{}/data/\"".format(os.getcwd()), readonly=False)
 
     f = open("./ddl/dataload_configuration.rel", "r")
     dataload_query_str = f.read()

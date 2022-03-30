@@ -34,8 +34,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery1 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery1);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.firstName", operation.firstName());
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.firstName", operation.firstName());
             return queryString;
         }
 
@@ -67,8 +67,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery2 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery2);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.maxDate", String.valueOf(operation.maxDate().getTime()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.maxDate", String.valueOf(operation.maxDate().getTime()));
             return queryString;
         }
 
@@ -85,11 +85,11 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery3 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery3);
             queryString = queryString
-                    .replace("sub_params.countryXName", operation.countryXName())
-                    .replace("sub_params.countryYName", operation.countryYName())
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.startDate", String.valueOf(operation.startDate().getTime()))
-                    .replace("sub_params.durationDays", String.valueOf(operation.durationDays()));
+                    .replace("sub_parms.countryXName", operation.countryXName())
+                    .replace("sub_parms.countryYName", operation.countryYName())
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.startDate", String.valueOf(operation.startDate().getTime()))
+                    .replace("sub_parms.durationDays", String.valueOf(operation.durationDays()));
             return queryString;
         }
 
@@ -106,9 +106,9 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery4 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery4);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.startDate", String.valueOf(operation.startDate().getTime()))
-                    .replace("sub_params.durationDays", String.valueOf(operation.durationDays()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.startDate", String.valueOf(operation.startDate().getTime()))
+                    .replace("sub_parms.durationDays", String.valueOf(operation.durationDays()));
             return queryString;
         }
 
@@ -125,8 +125,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery5 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery5);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.minDate", String.valueOf(operation.minDate().getTime()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.minDate", String.valueOf(operation.minDate().getTime()));
             return queryString;
         }
 
@@ -143,8 +143,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery6 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery6);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.tagName", operation.tagName());
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.tagName", operation.tagName());
             return queryString;
         }
 
@@ -161,7 +161,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery7 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery7);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()));
             return queryString;
         }
 
@@ -178,7 +178,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery8 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery8);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()));
             return queryString;
         }
 
@@ -195,8 +195,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery9 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery9);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.maxDate", String.valueOf(operation.maxDate().getTime()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.maxDate", String.valueOf(operation.maxDate().getTime()));
             return queryString;
         }
 
@@ -213,8 +213,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery10 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery10);
             queryString = queryString
-                    .replace("sub_params.month", String.valueOf(operation.month()))
-                    .replace("sub_params.personId", String.valueOf(operation.personId()));
+                    .replace("sub_parms.month", String.valueOf(operation.month()))
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()));
             return queryString;
         }
 
@@ -231,9 +231,9 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery11 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery11);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.countryName", operation.countryName())
-                    .replace("sub_params.workFromYear", String.valueOf(operation.workFromYear()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.countryName", operation.countryName())
+                    .replace("sub_parms.workFromYear", String.valueOf(operation.workFromYear()));
             return queryString;
         }
 
@@ -250,8 +250,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery12 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery12);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()))
-                    .replace("sub_params.tagClassName", operation.tagClassName());
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()))
+                    .replace("sub_parms.tagClassName", operation.tagClassName());
             return queryString;
         }
 
@@ -268,8 +268,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery13 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery13);
             queryString = queryString
-                    .replace("sub_params.person1Id", String.valueOf(operation.person1Id()))
-                    .replace("sub_params.person2Id", String.valueOf(operation.person2Id()));
+                    .replace("sub_parms.person1Id", String.valueOf(operation.person1Id()))
+                    .replace("sub_parms.person2Id", String.valueOf(operation.person2Id()));
             return queryString;
         }
 
@@ -286,8 +286,8 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcQuery14 operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveComplexQuery14);
             queryString = queryString
-                    .replace("sub_params.person1Id", String.valueOf(operation.person1Id()))
-                    .replace("sub_params.person2Id", String.valueOf(operation.person2Id()));
+                    .replace("sub_parms.person1Id", String.valueOf(operation.person1Id()))
+                    .replace("sub_parms.person2Id", String.valueOf(operation.person2Id()));
             return queryString;
         }
 
@@ -304,7 +304,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcShortQuery1PersonProfile operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveShortQuery1);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()));
             return queryString;
         }
 
@@ -321,7 +321,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcShortQuery2PersonPosts operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveShortQuery2);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()));
             return queryString;
         }
 
@@ -338,7 +338,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcShortQuery3PersonFriends operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveShortQuery3);
             queryString = queryString
-                    .replace("sub_params.personId", String.valueOf(operation.personId()));
+                    .replace("sub_parms.personId", String.valueOf(operation.personId()));
             return queryString;
         }
 
@@ -355,7 +355,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcShortQuery4MessageContent operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveShortQuery4);
             queryString = queryString
-                    .replace("sub_params.messageId", String.valueOf(operation.messageId()));
+                    .replace("sub_parms.messageId", String.valueOf(operation.messageId()));
             return queryString;
         }
 
@@ -372,7 +372,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcShortQuery5MessageCreator operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveShortQuery5);
             queryString = queryString
-                    .replace("sub_params.messageId", String.valueOf(operation.messageId()));
+                    .replace("sub_parms.messageId", String.valueOf(operation.messageId()));
             return queryString;
         }
 
@@ -389,7 +389,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcShortQuery6MessageForum operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveShortQuery6);
             queryString = queryString
-                    .replace("sub_params.messageId", String.valueOf(operation.messageId()));
+                    .replace("sub_parms.messageId", String.valueOf(operation.messageId()));
             return queryString;
         }
 
@@ -406,7 +406,7 @@ public abstract class RelDb extends BaseDb<RelQueryStore> {
         public String getQueryString(RelDbConnectionState state, LdbcShortQuery7MessageReplies operation) {
             String queryString = state.getQueryStore().getParameterizedQuery(QueryStore.QueryType.InteractiveShortQuery7);
             queryString = queryString
-                    .replace("sub_params.messageId", String.valueOf(operation.messageId()));
+                    .replace("sub_parms.messageId", String.valueOf(operation.messageId()));
             return queryString;
         }
 
